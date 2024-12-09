@@ -1,0 +1,233 @@
+/* Общие стили */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Контейнер */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Сообщения */
+.message-success {
+    color: #00c853;
+    background: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-error {
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Формы */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007aff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.3);
+}
+
+form button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    border-radius: 50px;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Список задач */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+ul li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    font-size: 1.1rem;
+    color: #1d1d1f;
+}
+
+ul li p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Кнопки внутри списка */
+ul li button {
+    background: none;
+    border: none;
+    margin: 0 5px 0 0;
+    padding: 0;
+    color: #007aff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+ul li button:hover {
+    color: #005bb5;
+}
+
+ul li button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ссылки */
+a {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+/* Кнопки навигации */
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007aff;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    color: #005bb5;
+}
+
+
+/*Кнопочные ссылки */
+a.button {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #0071e3; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 6px; 
+    transition: background-color 0.3s; 
+    border-radius: 50px;
+}
+
+a.button:hover {
+    background-color: #005bb5; 
+}
+
+ul li a.button {
+    margin-right: 10px; 
+    margin-top: 10px;
+}
+
+/* Статус задачи */
+.status {
+    display: inline-block; 
+    border-radius: 50px;
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    color: #fff; 
+    text-align: center;
+}
+
+.status.pending {
+    background-color: #ffc107;
+    border-radius: 50px; 
+}
+
+.status.completed {
+    background-color: #28a745; 
+    border-radius: 50px;
+}
+
+#add-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30%;
+}
+
+
